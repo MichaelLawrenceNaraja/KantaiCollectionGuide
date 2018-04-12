@@ -1,0 +1,266 @@
+* {
+	/*letter-spacing: 2px;*/
+}
+
+h1.crop{
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+	text-align: center;
+	font-family: 'Vollkorn', serif;
+}
+
+a {
+	color: red;
+}
+
+	.homepage,
+	.about,
+	.dd-page,
+	.cl-page,
+	.ca-page,
+	.bb-page,
+	.cv-page {
+		padding-top: 70px;
+	}
+/*Index Page*/
+.jumbotron,
+.well {
+	background: rgb(200, 54, 54); /* This is for ie8 and below */
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.footer {
+  color:#ddd;
+  background-color:#282E34;
+  text-align:center;
+  padding: 2px;
+  position:relative;
+}
+
+#kancolle-bg-vid {
+	position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+
+/*End oF Index CSS*/
+.ship-type-row {
+	margin-bottom: 10px;
+}
+
+/*Home Page*/
+.ship-info {
+	font-weight: bold;
+}
+
+.ship-info-container {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.video-container {
+	width: 80vh;
+	height: auto;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+#kancolle-video-home {
+	width: 100%;
+}
+/*End of Home Page*/
+
+/*About Page*/
+.developer {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.img-dev {
+	height: 30vh;
+	width: 30vh;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+}
+
+.img-dev > img {
+	border-radius: 50%;
+}
+
+.developer-img {
+	padding-bottom: 20px;
+}
+/*End of About Page*/
+
+/*Header for each parallax*/
+/*DD,Cl,CA,BB,CV Pages*/
+
+.glyphicon-play-circle,
+.glyphicon-pause {
+	font-size: 50px;
+	color: white;
+}
+/*End of DD,CL,CA,BB,CV Pages*/
+
+/* MEDIA QUERIES */
+/*Mobile*/
+@media only screen and (max-width: 400px) {
+	body {
+		background-image: url("../img/mainBG.jpg");
+		font-family: 'PT Sans Caption', sans-serif;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	.panel {
+		font-size: 10px;
+	}
+
+	.welcome-container {
+	transform: translate(0px, 20%);
+}
+
+	#kancolle-bg-vid {
+		display: none;
+	}
+
+	.video-container {
+	width: 60vh;
+	height: auto;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+	.space {
+	padding-bottom: 50px;
+	}
+
+	.ship-name-info {
+		font-size: 20px;
+	}
+
+	.ship-info {
+		font-size: 18px;
+		color: black;
+		font-weight: normal;
+		text-align: left;
+	}
+
+	.ship-info-divider {
+		padding-top: 30px;
+	}
+
+	.col-centered{
+		float: none;
+		margin: 0 auto;
+	}
+
+	.dev-title > h2 {
+		font-size: 20px;
+	}
+
+	.dev-title,
+	.dev-info {
+		text-align: center;
+	}
+
+}
+
+/*Tablet*/
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	body {
+	background-image: url("../img/mainBG.jpg");
+	font-family: 'PT Sans Caption', sans-serif;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	}
+
+	.welcome-container {
+	transform: translate(0px, 50%);
+	}
+
+	#kancolle-bg-vid {
+		display: none;
+	}
+
+	.ship-info-divider {
+		padding-top: 30px;
+	}
+
+	.col-centered{
+		float: none;
+		margin: 0 auto;
+	}
+
+	.ship-ctr {
+		margin: 0 auto;
+		width: 50%;
+	}
+
+	.video-container {
+	width: 60vh;
+	height: auto;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+	.dev-title,
+	.dev-info {
+		text-align: center;
+		font-size: 20px;
+		letter-spacing: 2px;
+	}
+
+	.ship-info {
+	font-size: 18px;
+	color: black;
+	font-weight: normal;
+	text-align: left;
+	}
+}
+
+/*Personal Computer*/
+@media only screen and (min-width: 961px) {
+	body{
+		background-image: url("../img/mainBG.jpg");
+		font-family: 'PT Sans Caption', sans-serif;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	.panel {}
+
+	.col-centered{
+		float: none;
+		margin: 0 auto;
+	}
+
+	.welcome-container {
+	transform: translate(0px, 50%);
+	}
+
+	.dev-title {
+		text-align: center;
+	}
+}
